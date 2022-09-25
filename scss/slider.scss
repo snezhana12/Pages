@@ -1,0 +1,96 @@
+@import 'mixin_variables.scss';
+
+.slider {
+    background-color: #F4F8FF;
+    padding-top: 126px;
+    padding-bottom: 150px;
+    &-title {
+        text-align: center;
+    }
+    hr {
+        @include hr-base;
+    }
+    .swiper {
+        
+        &-button-prev {
+            background-color: $basic-color; 
+            padding: 12px;
+            width: 50px;
+            height: 50px;
+            color: $main-color;
+            border-radius: 50%;
+        }
+        &-button-next {
+            background-color: $basic-color; 
+            padding: 12px;
+            width: 50px;
+            height: 50px;
+            color: $main-color;
+            border-radius: 50%;
+        }
+       
+        &-slide {
+            margin-top: 60px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.07);
+            border-radius: 5px;
+            max-width: 410px;
+            max-height: 622.27px;
+            &__img{
+                img {
+                    max-width: 100%;
+                }
+            }
+            &__text {
+                margin: 25px 65px 13px 30px;
+                span {
+                    font-family: 'Cardo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 34px;
+                    letter-spacing: 0.24px;
+                    color: #1B3764;
+                }
+                p {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 19px;
+                    line-height: 30px;
+                    color: #969AA0;
+                }
+            }
+            &__readmore {
+                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 30px 30px 30px;
+                a {
+                    font-family: 'Cardo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 19px;
+                    line-height: 23px;
+                    letter-spacing: 0.38px;
+                    text-transform: capitalize;
+                    color: #1B3764;
+                    &:hover {
+                        color: $basic-color;
+                    }
+                }
+                p {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #1B3764;
+                }
+
+            }
+        }
+    }
+    
+}

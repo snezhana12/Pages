@@ -1,0 +1,25 @@
+@import 'mixin_variables.scss';
+@media (max-width: 1200px) {
+    .trusted {
+        padding: 10px 24px;
+        &-title {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .trusted {
+        &-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .trusted-title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}

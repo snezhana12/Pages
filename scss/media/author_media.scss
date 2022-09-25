@@ -1,0 +1,98 @@
+@import 'mixin_variables.scss';
+
+@media (max-width: 1200px) {
+    .author {
+    padding: 5px 24px;
+        &-title {
+            text-align: center;
+        }
+        hr {
+            @include hr-base;
+        }
+        &-book {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-column-gap: 20px;
+            justify-self: center;
+            align-items: center;
+            &_img {
+                margin-top: 10px;
+                img {
+                filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.2));
+                width: 382px;
+                width: 285px;
+                }
+            }
+            &_descr {
+                &-title {
+                    font-size: 24px;
+                }
+                &-text {
+                    font-size: 19px;
+                }
+                &_list {
+                    margin-bottom: 7px;
+                    margin-left: 20px;
+                    ul {
+                        li {
+                            h4 {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+                &_btn {
+                    height: 55px;
+                    width: 170px;
+                
+                }  
+        }
+    }
+    }
+}
+@media (max-width: 991px) {
+.author {
+    padding: 5px 24px;
+        &-title {
+            text-align: center;
+            margin: 0;
+        }
+        hr {
+            @include hr-base;
+        }
+        &-book {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+    }
+    }
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+
+
+@media (max-width: 575px) {
+    .author {
+        &-title {
+            font-size: 36px;
+            line-height: 38px;
+        }
+        &-book {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &_descr {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-text {
+                text-align: center;
+            }
+            }
+            
+        }
+    }
+}

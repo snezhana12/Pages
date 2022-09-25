@@ -1,0 +1,65 @@
+@import 'mixin_variables.scss';
+
+@media (max-width: 1200px)  {
+    .learn {
+        padding: 30px 24px;
+        &-title {
+            margin: 0;
+        }
+        &-wrapper {
+                &_img  { 
+                    margin: 0;
+                    img {
+                    width: 400px;
+                    height: 500px;
+                    }
+                }
+                &_bloks {
+                    
+                    &-reason{ 
+                    max-width: 240px;
+                    max-height: 240px;
+                    
+                        &__text {
+                        padding: 5px;
+                        font-size: 18px;
+                        margin: 0;
+                    }
+                    &__number {
+                        width: 40px;
+                        height: 40px;
+                        margin: 5px;
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                }
+            
+        }
+        
+    }
+}
+
+@media (max-width: 767px) {
+    .learn {
+        &-wrapper_bloks {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 20px;
+        }
+        &-wrapper_img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 576px) { 
+    .learn-wrapper_bloks {
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+}

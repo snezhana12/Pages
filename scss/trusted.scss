@@ -1,0 +1,37 @@
+@import 'mixin_variables.scss';
+
+.trusted {
+    background-color: #fff;
+    &-title {
+        margin-top: 126px;
+        text-align: center;
+        margin-bottom: 23px;
+    }
+    hr {
+        @include hr-base;
+    }
+    &-wrapper {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 129.64px;
+        &_inf{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            &-descr {
+                margin-right: 16px;
+                margin-left: 16px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 28px;
+                color: #969AA0;
+            }
+        }
+        
+    }
+}

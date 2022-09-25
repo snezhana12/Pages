@@ -1,0 +1,106 @@
+@import 'mixin_variables';
+@media (max-width: 1200px) {
+.footer {
+    padding: 10px 24px;
+    display: flex;
+    &-social {
+        width: 350px;
+    }
+    &-copyraight {
+        display: none;
+    }
+}
+}
+@media (max-width: 991px) {
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &-social {
+        width: 200px;
+    }
+}
+}
+
+@media (max-width: 768px) {
+    .footer {
+        justify-content: flex-start;
+        padding: 10px;
+        &-social {
+            display: flex;
+            width: 100px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            &_logo {
+                margin-bottom: 0;
+                img {
+                    height: 30px;
+                }
+            }
+            &_icons {
+                display: flex;
+                flex-direction: row;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        .footer-contact_title {
+            margin-right: 0;
+            width: 150px;
+            
+        }
+        
+        &-title {
+            font-size: 16px;
+        }
+        &-explore {
+           ul {
+            list-style: none;
+            li {
+                list-style: none;
+                margin-left: -40%;
+                a {
+                    font-size: 14px;
+                }
+                
+            }
+        }
+        }
+        &-utility {
+            width: 120px;
+           ul {
+            list-style: none;
+            
+            li {
+                list-style: none;
+                margin-left: -40%;
+                a {
+                    font-size: 14px;
+                }
+                
+            }
+        }
+        }
+        &-contact {
+            width: 15px;
+            &_text {
+                display: none;
+            }
+            &_inform {
+                font-size: 14px;
+                line-height: 24px;
+                a {
+                font-size: 14px;
+                line-height: 24px;
+                }
+            }
+        }
+    }
+}

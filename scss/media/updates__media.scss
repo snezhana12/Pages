@@ -1,0 +1,52 @@
+@import 'mixin_variables.scss';
+@media (max-width: 1200px) {
+    .updates {
+        padding: 10px 24px;
+        &-form {
+            &_mail {
+                grid-template-columns: none;
+                grid-template-rows: 60px 60px;
+                grid-row-gap: 10px;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .updates {
+        &-form {
+            margin: 50px auto;
+            padding: 75px;
+            &_title {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .updates {
+        &-form {
+            padding: 15px;
+            &_title {
+                font-size: 28px;
+                line-height: 28px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &_mail {
+                input {
+                    width: 200px;
+                    height: 50px;
+                }
+                button {
+                        width: 245px;
+                        height: 50px;
+                }
+            }
+        }
+    }
+}

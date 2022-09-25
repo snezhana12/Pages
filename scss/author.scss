@@ -1,0 +1,91 @@
+@import 'mixin_variables.scss';
+
+
+.author {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    &-title {
+        text-align: center;
+        padding-bottom: 36px;
+    }
+    hr {
+        @include hr-base;
+        margin-bottom: 60px;
+    }
+    &-book {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        max-width: 100%;
+        grid-column-gap: 35px;
+        &_img {
+            img {
+                filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.2));
+                border-radius: 0px;
+                }
+        }
+        &_descr {
+            &-title {
+                font-family: 'Cardo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 38px;
+                letter-spacing: 0.32px;
+                color: #1B3764;
+                margin-bottom: 7px;
+            }
+            &-price {
+                color: $basic-color;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 21px;
+                line-height: 33px;
+                color: #FFCA42;
+                margin-bottom: 1px;
+            }
+            &-text {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 28px;
+                color: #969AA0;
+                margin-bottom: 6.45px;
+            }
+            &_list {
+                margin-bottom: 9.55px;
+                margin-left: 20px;
+                ul {
+                    padding-left: 5px;
+                    list-style-image: url('/img/welcome/marker.png');
+                    li {
+                        font-family: 'Cardo';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #1B3764;
+                    }
+                }
+            }
+            &_btn {
+                @include btn-text;
+                background-color: #FFFFFF;
+                height: 66px;
+                width: 206px;
+                border: 2px solid $basic-color;
+                border-radius: 0px;
+                cursor: pointer;
+                &:hover {
+                    background-color: $basic-color;
+                  }
+            
+            }  
+    }
+}
+}

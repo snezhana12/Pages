@@ -1,0 +1,46 @@
+* {
+  font-family: 'Cardo', serif;
+  font-family: 'Inter', sans-serif; 
+}
+
+$basic-color: #FFCA42;
+$main-color: #1B3764; 
+
+body {
+  margin:0;
+}
+.container {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+h2 {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 50px;
+  text-transform: capitalize;
+  color: $main-color;
+}
+h4 { 
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1B3764;
+}
+@import 'header.scss';
+@import 'mixin_variables';
+@import 'author.scss';
+@import 'about.scss';
+@import 'trusted.scss';
+@import 'book.scss';
+@import 'learn.scss';
+@import 'knowledge.scss';
+@import 'feedback.scss';
+@import 'slider.scss';
+@import 'updates.scss';
+@import 'footer.scss';
+@import './media/media_style.scss';

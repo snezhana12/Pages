@@ -1,0 +1,51 @@
+@import 'mixin_variables.scss';
+
+.book {
+    background-color: $main-color;
+    &-wrapper {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        &_img {
+            margin: 70px 130px 70px 70px;
+        }
+        &_descr {
+            margin-top: 140px;
+            margin-bottom: 135px;
+            &-title {
+                margin-bottom: 24px;
+                color: #FFFFFF;
+                font-size: 45px;
+                line-height: 54px;
+                text-align: left;
+            }
+            hr {
+                @include hr-base;
+                margin-left: 0;
+                margin-bottom: 27px;
+            }
+            &-text {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 28px;
+                color: #B4C7E7;
+                text-align: left;
+                margin-bottom: 27px;
+            }
+            &-btn {
+                @include button-base;
+                @include btn-text;
+                background-color: $main-color;
+                color: #FFFFFF;
+                border-color: $basic-color;
+                display: flow-root;
+                &:hover {
+                    background-color: $basic-color;
+                  }
+            }
+
+        }
+    }
+}

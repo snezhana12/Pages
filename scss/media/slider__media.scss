@@ -1,0 +1,41 @@
+@import 'mixin_variables.scss';
+@media (max-width: 1200px) {
+    .slider {
+        padding: 10px 24px;
+    }
+}
+
+@media (max-width: 991px) {
+    .swiper {
+        .swiper-slide-next {
+            margin-right: 0;
+        }
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .slider {
+        &-title {
+            font-size: 36px;
+            line-height: 42px;
+        }
+
+    .swiper {
+        
+        &-button-prev {
+            display: none;
+        }
+        &-button-next {
+            display: none;
+        }
+        &-slide__text {
+            text-align: center;
+            span {
+                line-height: 28px;
+                letter-spacing: normal;
+            }
+        }
+    }
+    }
+}

@@ -1,0 +1,60 @@
+@import 'mixin_variables.scss';
+
+.updates {
+    background-color:#FFFFFF;
+    &-form {
+        max-width: 100%;
+        max-height: 490px;
+        margin: 120px auto;
+        background-color: $basic-color;
+        padding: 96px 150px;
+        &_title {
+            text-align: center;
+            margin-bottom: 23px;
+        }
+        hr {
+            @include hr-base;
+            background: $main-color;
+        }
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            text-align: center;
+            color: #1B3764;
+        }
+        &_mail {
+            display: grid;
+            grid-template-columns: 656px 328px;
+            grid-template-rows: 70px;
+            grid-column-gap: 16px;
+            margin-top: 40px;
+            input {
+                background: #FFFFFF;
+                border: 1px solid #DCE1E9;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 31px;
+                letter-spacing: 0.18px;
+                color: #B4C7E7;
+                padding-left: 39px;
+            }
+            &-btn {
+                background: #1B3764;
+                border: 2px solid #1B3764;
+                @include btn-text;
+                color: #FFFFFF;
+                &:hover {
+                    background: #FFFFFF;
+                    color: $basic-color
+                }
+            }
+        }
+    }
+    
+}

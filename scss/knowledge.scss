@@ -1,0 +1,100 @@
+@import 'mixin_variables.scss';
+
+.knowledge {
+    background-color: #F4F8FF;
+    padding-top: 116px;
+    padding-bottom: 130px;
+    &-title {
+        text-align: center;
+    }
+    hr {
+        @include hr-base;
+        margin-top: 23px;
+        margin-bottom: 70px;
+    }
+    &-bloks {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 40px;
+        &_chapter {
+            background: #FFFFFF;
+            &-title {
+                margin: 42px 258px 21px 41px;
+            }
+            &-text {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 32px;
+                color: #969AA0;
+                margin-left: 41px;
+                margin-right: 62px;
+            }
+            &-list {
+                ul {
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+                    grid-column-gap: 45px;
+                    margin-left: 30px;
+                    margin-bottom: 34px;
+                    list-style-image: url('/img/welcome/marker.png');
+                    li {
+                        font-family: 'Cardo';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 22px;
+                        line-height: 31px;
+                        color: #1B3764;
+                        span {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 17px;
+                            line-height: 27px;
+                            color: #969AA0;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+    &-btn  { 
+        margin-top: 60px;
+        text-align: center;
+        margin-bottom: 34px;
+        button {
+        @include button-base;
+        @include btn-text;
+        height: 76px;
+        width: 429px;
+        }
+    }
+    &-descr {
+        text-align: center;
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            color: #969AA0;
+            a {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                text-align: center;
+                letter-spacing: 0.19px;
+                text-decoration: none;
+                color: #1B3764;
+                &:hover {
+                    color: $basic-color;
+                }
+                }
+            }
+        }
+    }

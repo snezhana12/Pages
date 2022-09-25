@@ -1,0 +1,57 @@
+@import 'mixin_variables.scss';
+@media (max-width: 1200px) {
+    .knowledge {
+        padding: 10px 24px;
+    }
+}
+
+@media (max-width: 991px) {
+    .knowledge {
+        &-bloks {
+            &_chapter {
+                width: 320px;
+                height: 300px;
+                &-text {
+                    font-size: 17px;
+                }
+                &-title {
+                    font-size: 20px;
+                    margin: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .knowledge {
+        &-bloks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .knowledge {
+        &-bloks_chapter {
+            padding: 5px;
+            &-text {
+                margin: 0%;
+            }
+            &-list {
+                ul {
+                    margin-left: 0;
+                }
+                
+            }
+        }
+        &-btn {
+            button {
+                width: 250px;
+            }
+        }
+    }
+}
